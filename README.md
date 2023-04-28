@@ -76,6 +76,4 @@ form.form>.form-content>.form-content__subheader>.form-content__field+input.form
 ![Image alt](https://github.com/mananena/2semBEM/blob/BEM/screne3.png)
 .card>img.card__foto+.card__block>h2.card__block_text-inner+a.card__block_text-inner
 
-
-
-
+1
