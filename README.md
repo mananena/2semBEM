@@ -1,79 +1,111 @@
 
-1BEM(human-body)
+## 1 BEM(human-body)
+```
 <body>
     <main>
         <div class="human-body">
-            <div class="human-body__head">
-                <div class="human-body__head_eyes">
-                    <div class="human-body__head_eyes--color">
-                </div>
-                <div class="human-body__head_nose"></div>
-                <div class="human-body__head_mouth">
-                    <div class="human-body__head_mouth--weight-lips">
+            <div class="human-body__head head">
+                <div class="head__eyes"></div>
+                <div class="head__nose"></div>
+                <div class="head__mouth">
+                    <div class="head__mouth_red"></div>
                 </div>
             </div>
-            <div class="human-body__torso">
-                <div class="human-body__torso_stomach"></div>
-                <div class="human-body__torso_left-arm">
-                    <div class="human-body__torso_left-arm--scar">
+            <div class="human-body__torso torso">
+                <div class="torso__stomach"></div>
+                <div class="torso__left-arm">
+                    <div class="torso__left-arm_scar"></div>
                 </div>
-                <div class="human-body__torso_right-arm"></div>
+                <div class="torso__right-arm"></div>
             </div>
-            <div class="human-body__legs">
-                <div class="human-body__legs_left-leg"></div>
-                <div class="human-body__legs_right-leg"></div>
-                <div class="human-body__legs_feet">
-                    <div class="human-body__legs_feet--length">
+            <div class="human-body__legs legs">
+                <div class="legs__left-leg"></div>
+                <div class="legs__right-leg"></div>
+                <div class="legs__feet">
+                    <div class="legs__feet-length">
                 </div>
             </div>
         </div>
     </main>
 </body>
-2BEM
+```
+## 2BEM
 
-2BEM(header,form, card)
+### 2BEM(header,form, card)
+```
 <header class="header">
-    <div class="header-container">
-        <div class="header__logo"><a href=""></a></div>
-        <nav class="header__menu">
-            <ul class="header__menu_nav-list">
-                <li class="header__menu_nav-list--pink"></li>
-                <li class="header__menu_nav-list--pink"></li>
-                <li class="header__menu_nav-list--pink"></li>
-                <li class="header__menu_nav-list--pink"></li>
-                <li class="header__menu_nav-list--pink"></li>
-                <li class="header__menu_nav-list--pink"></li>
-                <li class="header__menu_nav-list--pink"></li>
+    <div class="header__wrapper">
+        <a href="" class="header__logo logo"><img src="" alt="" class="logo__image"></a>
+        <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="" class="navigation__link"></a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"></a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"></a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"></a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"></a></li>
+                <li class="navigation__item"><a href="" class="navigation__link"></a></li>
+                <li class="navigation__item"><a href="" class="navigation__link navigation__link--cart"></a></li>
             </ul>
         </nav>
     </div>
 </header>
-<form class="form" action="https://httpbin.org/post" method="post">
-        <div class="form-content">
-            <div class="form-content__subheader"></div>
-            <div class="form-content__field">
-                <input name="name" class="form-content__field_input" placeholder="name" required />
-                <label class="form-content__field_input"></label>
-            </div>
-            <div class="form-content__field">
-                <input name="date" class="form-content__field_input" type="date" required />
-                <label class="form-content__field_input"></label>
-            </div>
-        </div>
-</form>
 
+<section class="callback">
+    <div class="callback__contacts-wrapper">
+    </div>
+    <div class="callback__form-wrapper">
+        <h3 class="callback__title"></h3>
+        <p class="callback__text"></p>
+        <form action="" class="callback__form form">
+            <input type="text" class="form__input">
+            <input type="text" class="form__input"><input type="text" class="form__input">
+            <input type="text" class="form__input">
+            <textarea name="" id="" cols="30" rows="10" class="form__input form__input--textarea"></textarea>
+            <button type="submit" class="form__button form__button--submit"></button>
+        </form>
+    </div>
+</section>
 
-3-4BEM(Emmet)
+<section class="card">
+    <h2 class="card__title"></h2>
+    <p class="card__text"></p>
+    <a class="card__link card__link--inside" href=""></a>
+    <ul class="card__list list">
+        <li class="list__item">
+            <img src="" class="list__weight lipitem_photo" alt="">
+            <h3 class="list__item_subtext"></h3>
+            <a href="" class="list__item__link"></a>
+        </li>
+        <li class="list__item">
+            <img src="" class="list__item_photo" alt="">
+            <h3 class="list__item_subtext"></h3>
+            <a href="" class="list__item__link"></a>
+        </li>
+        <li class="list__item">
+            <img src="" class="list__item_photo" alt="">
+            <h3 class="list__item_subtext"></h3>
+            <a href="" class="list__item__link"></a>
+        </li>
+    </ul>
+</section>
+```
+
+### 3-4BEM(Emmet)
+
  (header)
-![Image alt](https://github.com/mananena/2semBEM/blob/BEM/screne1.png)
-header.header>.header-container>.header__logo>nav.header__menu>ul.header__menu_nav-list>li*7.header__menu_nav-list--pink
+
+![Image alt](screne1.png)
+
+`header.header>.header__wrapper>a.header__logo.logo>img.logo__image^nav.header__navigation.navigation>ul.navigation__list>li.navigation__item*6>a.navigation__link^li.navigation__item>a.navigation__link.navigation__link--cart`
 
  (form)
-![Image alt](https://github.com/mananena/2semBEM/blob/BEM/screne2.png)
-form.form>.form-content>.form-content__subheader>.form-content__field+input.form-content__field-input+lable.form-content__field-input^.form-content__field>input.form-content__field-input+lable.form-content__field-input
+
+![Image alt](callback.jpg)
+
+`section.callback>.callback__contacts-wrapper+.callback__form-wrapper>h3.callback__title+p.callback__text+form.callback__form.form>input.form__input*4+textarea.form__input.form__input--textarea+button:submit.form__button.form__button--submit`
 
   (card)
-![Image alt](https://github.com/mananena/2semBEM/blob/BEM/screne3.png)
-.card>img.card__foto+.card__block>h2.card__block_text-inner+a.card__block_text-inner
 
-1
+![Image alt](card.jpg) 
+
+`section.card>h2.card__title+p.card__text+a.card__link+ul.card__list.list>li.list__item*3>img.list__item_photo+h3.list__item_subtext+a.list__item_link`
