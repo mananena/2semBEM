@@ -22,7 +22,7 @@
                 <div class="legs__left-leg"></div>
                 <div class="legs__right-leg"></div>
                 <div class="legs__feet">
-                    <div class="legs__feet-length">
+                    <div class="legs__feet_tatoo"></div>
                 </div>
             </div>
         </div>
@@ -66,25 +66,60 @@
     </div>
 </section>
 
-<section class="card">
-    <h2 class="card__title"></h2>
-    <p class="card__text"></p>
-    <a class="card__link card__link--inside" href=""></a>
-    <ul class="card__list list">
-        <li class="list__item">
-            <img src="" class="list__weight lipitem_photo" alt="">
-            <h3 class="list__item_subtext"></h3>
-            <a href="" class="list__item__link"></a>
+<section class="about-me">
+    <h2 class="about-me__title"></h2>
+    <p class="about-me__text"></p>
+    <a class="about-me__link about-me__link-" href=""></a>
+    <ul class="about-me__cards cards">
+        <li class="cards__about-card about-card">
+            <img src="" class="about-card__photo" alt="">
+            <h3 class="about-card__title"></h3>
+            <a href="" class="about-card__link"></a>
         </li>
-        <li class="list__item">
-            <img src="" class="list__item_photo" alt="">
-            <h3 class="list__item_subtext"></h3>
-            <a href="" class="list__item__link"></a>
+        <li class="cards__about-card about-card">
+            <img src="" class="about-card__photo" alt="">
+            <h3 class="about-card__title"></h3>
+            <a href="" class="about-card__link"></a>
         </li>
-        <li class="list__item">
-            <img src="" class="list__item_photo" alt="">
-            <h3 class="list__item_subtext"></h3>
-            <a href="" class="list__item__link"></a>
+        <li class="cards__about-card about-card">
+            <img src="" class="about-card__photo" alt="">
+            <h3 class="about-card__title"></h3>
+            <a href="" class="about-card__link"></a>
+        </li>
+    </ul>
+</section>
+
+<section class="cushion">
+    <ul class="cushion__price-list price-list">
+        <li class="price-list__item item-cushion">
+            <img src="" class="item-cushion__photo" alt="">
+            <h2 class="item-cushion__title"></h2>
+            <p class="item-cushion__numbers"></p>
+        </li>
+        <li class="price-list__item item-cushion">
+            <img src="" class="item-cushion__photo" alt="">
+            <h2 class="item-cushion__title"></h2>
+            <p class="item-cushion__numbers"></p>
+        </li>
+        <li class="price-list__item item-cushion">
+            <img src="" class="item-cushion__photo" alt="">
+            <h2 class="item-cushion__title"></h2>
+            <p class="item-cushion__numbers"></p>
+        </li>
+        <li class="price-list__item item-cushion">
+            <img src="" class="item-cushion__photo" alt="">
+            <h2 class="item-cushion__title"></h2>
+            <p class="item-cushion__numbers"></p>
+        </li>
+        <li class="price-list__item item-cushion">
+            <img src="" class="item-cushion__photo" alt="">
+            <h2 class="item-cushion__title"></h2>
+            <p class="item-cushion__numbers"></p>
+        </li>
+        <li class="price-list__item item-cushion">
+            <img src="" class="item-cushion__photo" alt="">
+            <h2 class="item-cushion__title"></h2>
+            <p class="item-cushion__numbers"></p>
         </li>
     </ul>
 </section>
@@ -100,12 +135,16 @@
 
  (form)
 
-![Image alt](callback.jpg)
+![Image alt](callback.png)
 
 `section.callback>.callback__contacts-wrapper+.callback__form-wrapper>h3.callback__title+p.callback__text+form.callback__form.form>input.form__input*4+textarea.form__input.form__input--textarea+button:submit.form__button.form__button--submit`
 
   (card)
 
-![Image alt](card.jpg) 
+![Image alt](card.png) 
 
-`section.card>h2.card__title+p.card__text+a.card__link+ul.card__list.list>li.list__item*3>img.list__item_photo+h3.list__item_subtext+a.list__item_link`
+`section.about-me>h2.about-me__title+p.about-me__text+a.about-me__link+ul.about-me__cards.cards>li.cards__about-card.about-card*3>img.about-card__photo+h3.about-card__title+a.about-card__link`
+
+![Image alt](cushion.jpg)
+
+`section.cushion>ul.cushion__list.price-list>li.price-list__cushion-card.cushion-card*6>img.cushion-card__photo+h2.cushion-card__title+p.cushion-card__numbers`
